@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/api/news", "dest": "/api/news/index.js" },
+    { "src": "/api/news/(.*)", "dest": "/api/news/[id].js" }
+  ]
+}
