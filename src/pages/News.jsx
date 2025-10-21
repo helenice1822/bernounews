@@ -1,0 +1,1 @@
+import {useEffect,useState} from 'react';import Layout from '../components/Layout';export default ()=>{const [items,set]=useState([]);useEffect(()=>{fetch('/api/news').then(r=>r.json()).then(d=>set(d.items||[]))},[]);return <Layout><h2>Notícias</h2><ul>{items.map(n=><li key={n.id}><a href={'/editar/'+n.id}>{n.title}</a></li>)}</ul></Layout>};

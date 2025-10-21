@@ -1,0 +1,1 @@
+import Layout from '../components/Layout';export default ()=> (<Layout><h1>BernouNews</h1><p>Jornal da turma — agora com edição e banco Upstash.</p><a href='/noticias'>Ver notícias</a></Layout>)

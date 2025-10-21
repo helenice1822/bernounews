@@ -1,5 +1,1 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './styles.css'
-createRoot(document.getElementById('root')).render(<React.StrictMode><App/></React.StrictMode>)
+import React from 'react';import {createRoot} from 'react-dom/client';import {BrowserRouter,Routes,Route} from 'react-router-dom';import './index.css';import App from './pages/App.jsx';import News from './pages/News.jsx';import Admin from './pages/Admin.jsx';import Submit from './pages/Submit.jsx';import EditNews from './pages/EditNews.jsx';createRoot(document.getElementById('root')).render(<BrowserRouter><Routes><Route path='/' element={<App/>}/><Route path='/noticias' element={<News/>}/><Route path='/admin' element={<Admin/>}/><Route path='/submit' element={<Submit/>}/><Route path='/editar/:id' element={<EditNews/>}/></Routes></BrowserRouter>)
